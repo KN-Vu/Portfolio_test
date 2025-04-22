@@ -1,0 +1,222 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body{
+    background: linear-gradient(to bottom right ,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    min-height: 100vh;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to right, orangered, darkorange, orange);
+    background-clip: text;
+    color: transparent;
+}
+
+.button{
+    background-color: red;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN_INTRO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content h1{
+    font-size: 65px;
+}
+
+.content span{
+    background: linear-gradient(to right, orangered, darkorange, orange);
+    background-clip: text;
+    color: transparent;
+}
+
+.content p:first-of-type{
+    color: rgb(155, 5, 5);
+    font-size: 35px;
+}
+
+.content p:nth-of-type(2){
+    color: darkblue;
+    font-size: 30px;
+}
+
+.start:hover{
+    background-color: blue;
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.readmore{
+    background: transparent;
+    border: 2px solid red;
+    color: rgb(255, 66, 66);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/*pseudo*/
+.readmore::before{
+    content: "";
+    position: absolute;
+    background: red;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.readmore:hover{
+    color: white;
+}
+
+.readmore:hover::before{
+    width: 100%;
+}
+
+.image_container{
+    cursor: zoom-in;
+}
+
+.image_container:hover{
+    box-shadow: #060821 0px 14px 28px;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN_INTRO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN_LINKS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.link_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.link_wrapper h5{
+    font-weight: 100;
+}
+
+.tools{
+    background-color: indigo;
+    border: 2px solid rgb(138, 74, 184);
+    padding: 25px 40px;
+    width: calc(100%/2 - 20px);
+}
+
+.tools:hover{
+    box-shadow: rgb(106, 57, 141) 0px 14px 28px;
+    transform: scale(103%);
+    transition: all 0.3s ease;
+}
+
+.coding{
+    background-color: indigo;
+    border: 2px solid rgb(138, 74, 184);
+    padding: 25px 40px;
+    width: calc(100%/2 - 20px);
+
+}
+
+.coding:hover{
+    box-shadow: rgb(106, 57, 141) 0px 14px 28px;
+    transform: scale(103%);
+    transition: all 0.3s ease;
+}
+
+.community{
+    background-color: indigo;
+    border: 2px solid rgb(138, 74, 184);
+    padding: 25px 40px;
+    width: calc(100% - 20px);
+}
+
+.community:hover{
+    box-shadow: rgb(106, 57, 141) 0px 14px 28px;
+    transform: scale(103%);
+    transition: all 0.3s ease;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN_LINKS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer{
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+.socials{
+    display: flex;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 20px;
+
+}
+
+.socials:hover{
+    color: black;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+    
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
